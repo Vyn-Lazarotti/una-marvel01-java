@@ -12,7 +12,7 @@ public class Alistamento {
         int idade = teclado.nextInt();
         
         if (idade < 18) {
-            System.out.println("Candidato rejeitado. Muito jovem para a guerra!");
+            System.out.println("Candidato rejeitado. Muito jovem para a guerra!\n Retorne em alguns anos!");
         } else {
             
             System.out.println("Digite o seu peso: ");
