@@ -5,7 +5,7 @@ public class Alistamento {
         Scanner teclado = new Scanner(System.in);
         
         System.out.println("Digite o nome do recruta: ");
-        String nome = teclado.nextLine();
+        String nome = teclado.nextLine().toUpperCase();
         System.out.println("Olá, " + nome + "!");
 
         System.out.println("Digite sua idade: ");
@@ -18,6 +18,11 @@ public class Alistamento {
             System.out.println("Digite o seu peso: ");
             double peso = teclado.nextDouble();
             System.out.println("Seu peso é " + peso + " kg");
+
+            System.out.println("Digite sua altura em centimetros: ");
+            double altura = teclado.nextDouble();
+
+            double imc = peso / Math.pow(altura / 100, 2);
 
             if (peso < 50) {
                 System.out.println("Você está abaixo do peso ideal para o alistamento!");
