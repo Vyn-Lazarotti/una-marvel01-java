@@ -22,7 +22,7 @@ public class Alistamento {
             System.out.println("Digite sua altura em centimetros: ");
             double altura = teclado.nextDouble();
 
-            double imc = peso / Math.pow(altura / 100, 2);
+            //double imc = peso / Math.pow(altura / 100, 2);
 
             if (peso < 50) {
                 System.out.println("Você está abaixo do peso ideal para o alistamento!");
