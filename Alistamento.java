@@ -8,16 +8,26 @@ public class Alistamento {
         String nome = teclado.nextLine();
         System.out.println("Olá, " + nome + "!");
 
-        System.out.println("Digite o seu peso: ");
-        double peso = teclado.nextDouble();
-        System.out.println("Seu peso é " + peso + " kg");
-
-        if (peso < 50) {
-            System.out.println("Você está abaixo do peso ideal para o alistamento!");
-        } else if (peso >= 50 && peso <= 100) {
-            System.out.println("Você está dentro do peso ideal para o alistamento!");
+        System.out.println("Digite sua idade: ");
+        int idade = teclado.nextInt();
+        
+        if (idade < 18) {
+            System.out.println("Candidato rejeitado. Muito jovem para a guerra.");
         } else {
-            System.out.println("Você está acima do peso ideal para o alistamento!");
+            
+            System.out.println("Digite o seu peso: ");
+            double peso = teclado.nextDouble();
+            System.out.println("Seu peso é " + peso + " kg");
+
+            if (peso < 50) {
+                System.out.println("Você está abaixo do peso ideal para o alistamento!");
+            } else if (peso >= 50 && peso <= 100) {
+                System.out.println("Você está dentro do peso ideal para o alistamento!");
+            } else {
+                System.out.println("Você está acima do peso ideal para o alistamento!");
+            }
+        }
+        
 
         teclado.close();
     }
